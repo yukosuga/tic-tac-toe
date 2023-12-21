@@ -120,6 +120,11 @@ function App() {
     setGameState(newValues);
   };
 
+  const resetScores = () => {
+    setScores(INITIAL_SCORES);
+    localStorage.setItem("scores", JSON.stringify(INITIAL_SCORES));
+  };
+
   return (
     <div className="h-full p-24 bg-gradient-to-r from-gray-900 to-black">
       <h1 className="text-center text-5xl mb-7 font-display text-white">
@@ -136,16 +141,23 @@ function App() {
           ))}
         </div>
 
-        <div className="mx-auto w-96 text-3xl">
+        <div className="flex flex-col items-center justify-center mx-auto w-96 text-3xl">
           <p className="text-white mt-8">
             Next Player is <span>{currentPlayer}</span>
           </p>
           <p className="text-white mt-5">
-            * Player 💜 won: <span>{scores["💜"]}</span>
+            Player 💜 won: <span>{scores["💜"]}</span>
           </p>
           <p className="text-white mt-2">
-            * Player 💛 won: <span>{scores["💛"]}</span>
+            Player 💛 won: <span>{scores["💛"]}</span>
           </p>
+
+          <button
+            className="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-5 rounded mt-7"
+            onClick={resetScores}
+          >
+            Reset Scores
+          </button>
         </div>
       </div>
     </div>
