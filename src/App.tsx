@@ -141,7 +141,7 @@ function App() {
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-center mx-auto w-72 md:w-96 text-3xl">
+        <div className="flex flex-col items-center justify-center mx-auto w-72 md:w-96 text-2xl md:text-3xl">
           <p className="text-white mt-8">
             Next Player is <span>{currentPlayer}</span>
           </p>
