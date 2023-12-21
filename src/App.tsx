@@ -126,7 +126,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen p-4 md:p-24 bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center">
+    <div className="h-screen md:p-24 bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center">
       <h1 className="text-center text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6 md:mb-7 font-display text-white">
         Tic Tac Toe
       </h1>
