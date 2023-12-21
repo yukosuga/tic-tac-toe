@@ -126,8 +126,8 @@ function App() {
   };
 
   return (
-    <div className="h-screen p-0 md:p-24 bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center">
-      <h1 className="text-center text-2xl sm:text-3xl md:text-5xl mb-4 sm:mb-6 md:mb-7 font-display text-white">
+    <div className="h-screen bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center">
+      <h1 className="text-center text-2xl md:text-3xl mt-6 mb-4 font-display text-white">
         Tic Tac Toe
       </h1>
       <div>
@@ -142,10 +142,10 @@ function App() {
         </div>
 
         <div className="flex flex-col items-center justify-center mx-auto w-72 md:w-96 text-2xl md:text-3xl">
-          <p className="text-white mt-4 sm:mt-6 md:mt-7">
+          <p className="text-white mt-4">
             Next Player is <span>{currentPlayer}</span>
           </p>
-          <p className="text-white mt-3 sm:mt-4 md:mt-5">
+          <p className="text-white mt-3">
             Player 💜 won: <span>{scores["💜"]}</span>
           </p>
           <p className="text-white mt-2">
@@ -153,7 +153,7 @@ function App() {
           </p>
 
           <button
-            className="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-5 rounded mt-4 sm:mt-6 md:mt-7 text-xl md:text-2xl"
+            className="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-5 rounded mt-4 text-xl md:text-2xl"
             onClick={resetScores}
           >
             Reset Scores
