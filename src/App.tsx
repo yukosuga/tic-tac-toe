@@ -127,11 +127,11 @@ function App() {
 
   return (
     <div className="h-screen p-0 md:p-24 bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center">
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6 md:mb-7 font-display text-white">
+      <h1 className="text-center text-2xl sm:text-3xl md:text-5xl mb-4 sm:mb-6 md:mb-7 font-display text-white">
         Tic Tac Toe
       </h1>
       <div>
-        <div className="grid grid-cols-3 gap-2 md:gap-3 mx-auto w-72 md:w-96">
+        <div className="grid grid-cols-3 gap-2 md:gap-3 mx-auto w-80 md:w-96">
           {gameState.map((player, index) => (
             <Square
               key={index}
