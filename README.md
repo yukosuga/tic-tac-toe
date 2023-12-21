@@ -14,7 +14,7 @@
 
 This project is a Tic Tac Toe game developed using React, Tailwind CSS, Vite, and deployed on Vercel.   
 <br />
-<img src="./img/readme_image.jpg" alt="Tic Tac Toe app screenshot" width="400">
+<img src="./img/readme.image.png" alt="Tic Tac Toe app screenshot" width="400">
 
 ## Features
 
