@@ -142,10 +142,10 @@ function App() {
         </div>
 
         <div className="flex flex-col items-center justify-center mx-auto w-72 md:w-96 text-2xl md:text-3xl">
-          <p className="text-white mt-8">
+          <p className="text-white mt-4 sm:mt-6 md:mt-7">
             Next Player is <span>{currentPlayer}</span>
           </p>
-          <p className="text-white mt-5">
+          <p className="text-white mt-3 sm:mt-4 md:mt-5">
             Player 💜 won: <span>{scores["💜"]}</span>
           </p>
           <p className="text-white mt-2">
@@ -153,7 +153,7 @@ function App() {
           </p>
 
           <button
-            className="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-5 rounded mt-7 text-2xl"
+            className="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-5 rounded mt-4 sm:mt-6 md:mt-7 text-xl md:text-2xl"
             onClick={resetScores}
           >
             Reset Scores
